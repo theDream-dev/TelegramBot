@@ -70,7 +70,7 @@ async def respond_to_question(message: types.Message, state: FSMContext):
         await state.finish()
 
     elif question.startswith('/'):
-        await bot.send_message(message.chat.id, "Probably you forgot to type 'Cancel'!")
+        await bot.send_message(message.chat.id, "Вероятно, Вы не нажали кнопку <выйти из режима>!")
 
     else:
 

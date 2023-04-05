@@ -8,7 +8,6 @@ from aiogram.types import ChatActions
 from buttons.buttons import create_exit_button
 from states import GenerateImage
 
-
 # Set up OpenAI API key
 openai.api_key = cfg.AI_TOKEN
 
@@ -43,9 +42,10 @@ async def generate_image(message: types.Message, state: FSMContext):
     if prompt == "Выйти из режима":
         await bot.send_message(message.chat.id, "Произошла деактивация режима генерации картинок...")
         await bot.send_message(message.chat.id, "Бот не будет реагировать на запросы до следующего выбора режима")
+        await state.finish()
 
     elif prompt.startswith('/'):
-        await bot.send_message(message.chat.id, "Probably you forgot to type 'Cancel'!")
+        await bot.send_message(message.chat.id, "Вероятно, Вы не нажали кнопку <выйти из режима>!")
 
     else:
 

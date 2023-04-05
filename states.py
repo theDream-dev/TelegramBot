@@ -9,3 +9,8 @@ class GenerateText(StatesGroup):
 class GenerateImage(StatesGroup):
     cmd_generate = State()
     wait_prompt = State()
+
+
+class VariateImage(StatesGroup):
+    cmd_generate = State()
+    wait_prompt = State()

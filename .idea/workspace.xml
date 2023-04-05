@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e704191-9c9d-4efb-8de2-cedcb2b28818" name="Changes" comment="check messages_arr length">
+    <list default="true" id="1e704191-9c9d-4efb-8de2-cedcb2b28818" name="Changes" comment="buttons fixed">
+      <change afterPath="$PROJECT_DIR$/services/openai/create_variation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buttons/buttons.py" beforeDir="false" afterPath="$PROJECT_DIR$/buttons/buttons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buttons/executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/buttons/executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/openai/generate_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/openai/generate_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/openai/generate_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/openai/generate_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/states.py" beforeDir="false" afterPath="$PROJECT_DIR$/states.py" afterDir="false" />
     </list>
-    <list id="99f4233c-03a6-4cac-ae15-546be8c896bb" name="Changes by user" comment="">
-      <change beforePath="$PROJECT_DIR$/services/openai/generate_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/openai/generate_image.py" afterDir="false" />
-    </list>
+    <list id="99f4233c-03a6-4cac-ae15-546be8c896bb" name="Changes by user" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,16 +27,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="payment" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/services/openai/generate_image.py">
-      <ranges>
-        <range start1="7" end1="7" start2="7" end2="8" changelist="1e704191-9c9d-4efb-8de2-cedcb2b28818" />
-        <range start1="8" end1="9" start2="9" end2="9" changelist="99f4233c-03a6-4cac-ae15-546be8c896bb" />
-        <range start1="22" end1="24" start2="22" end2="23" changelist="1e704191-9c9d-4efb-8de2-cedcb2b28818" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alexandr/PycharmProjects/TelegramBot&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/aleksandr/TelegramBot&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -110,7 +106,9 @@
       <workItem from="1680208587939" duration="267000" />
       <workItem from="1680208855820" duration="12869000" />
       <workItem from="1680365355026" duration="2223000" />
-      <workItem from="1680370040588" duration="341000" />
+      <workItem from="1680370040588" duration="6879000" />
+      <workItem from="1680558484911" duration="924000" />
+      <workItem from="1680649791971" duration="8733000" />
     </task>
     <task id="LOCAL-00001" summary="check messages_arr length">
       <created>1679773091910</created>
@@ -119,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679773091910</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="buttons fixed">
+      <created>1680370663029</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680370663029</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +146,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="length" />
+                        <option value="image_var" />
                       </list>
                     </value>
                   </entry>
@@ -160,10 +165,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="check messages_arr length" />
-    <option name="LAST_COMMIT_MESSAGE" value="check messages_arr length" />
+    <MESSAGE value="buttons fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="buttons fixed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TelegramBot$generate_text.coverage" NAME="generate_text Coverage Results" MODIFIED="1680211350108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services/openai" />
-    <SUITE FILE_PATH="coverage/TelegramBot$main.coverage" NAME="main Coverage Results" MODIFIED="1680369408475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TelegramBot$main.coverage" NAME="main Coverage Results" MODIFIED="1680658488240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

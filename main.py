@@ -11,6 +11,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from services.openai.start import register_start
 from services.openai.generate_text import register_generate_text
 from services.openai.generate_image import register_generate_image
+from services.openai.create_variation import register_variate_image
 
 from commands import set_default_commands
 
@@ -24,6 +25,7 @@ def register_all_handlers(dp):
     register_start(dp)
     register_generate_text(dp)
     register_generate_image(dp)
+    register_variate_image(dp)
 
 
 async def main():
